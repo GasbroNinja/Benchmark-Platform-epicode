@@ -1,3 +1,4 @@
+![Logo](https://i.ibb.co/fMtzLtq/epicode-logo.png)
 
 # 🛠 *Benchmark Platform Epicode*
 #### 🔬 **Progetto in JavaScript, HTML, CSS**
