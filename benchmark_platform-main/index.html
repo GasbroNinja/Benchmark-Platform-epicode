@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap" rel="stylesheet">
+    <!-- COLLEGARE FONTAWESOME PER IL TICK DELLA CHECKBOX-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <title>Benchmark platform</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <nav>
+                <img src="assets/images/epicode_logo.png" alt="">
+            </nav>
+            <div id="main" class="welcome">
+                <div class="content">
+                    <h1>Welcome to <strong>your exam</strong></h1>
+                    <div class="welcontent">
+                        <h3>Instructions</h3>
+                        <p>
+                            We don't expect most engineers to know the answers to all of these
+                            questions, so don't worry if you're unsure of a few of them.
+                        </p>
+                        <ul>
+                            <li>Each question is <strong> timed</strong> and can only <strong>be answered once</strong>.</li>
+                            <li>Changing browser tab or opening other windows <strong>will invalidate the question</strong>.</li>
+                            <li>This exam will take approx.<strong> 0-5 minutes</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <label class="terms"><input type="checkbox" id="terms"> <span>I promise to answer myself without help from anyone</span></label>
+                        <button disabled>proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        documentazione
+        https://www.w3schools.com/tags/tag_template.asp
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template?retiredLocale=it
+    -->
+    <template id="benchmark">
+        <div class="layoutimer">
+            <div id="timer">
+                <svg class="svg-indicator" >
+                    <circle class="svg-indicator-track" />
+                    <circle class="svg-indicator-indication" />
+                </svg>
+                <div class="testotimer">
+                    <p>seconds</p>
+                    <p id="countdown">20</p>
+                    <p>remaining</p>
+                </div>
+            </div>
+        </div>     
+            <form >
+                  <fieldset>
+    
+                       <legend>Scegli la difficoltà</legend>
+                       <!--
+                       <select name="" id="">
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                       </select> 
+                       <input type="number" name="" id="">
+                       <input type="button" name="" id="" value="Inizia">
+                        -->
+<!--
+                    <div class="answer">
+                    <input type="radio" id="radio4" name="vehicle4" value="Boat">
+                    <label for="radio4"> I have a boat</label><br>
+                    </div>
+-->                    
+                  </fieldset>
+            </form>
+    
+            <div class="footer">question &nbsp;<span id="current">1</span><span class="slash">/</span><span id="total" class="slash"> 10</span></div>
+
+    </template>
+
+    <template id="results">
+        <div class="content">
+            <h2>Results</h2>
+            <p><!--classe tolta pofh2-->The summary of your answers:</p>
+            <div class="percentuali">
+                <div id="correct">
+                    <h4>Correct</h4>
+                    <p></p>
+                    <p><span></span>/<span></span>  questions</p>
+                </div>
+                <div class="centro">
+                    <div class="testocentro hideMsg">
+                        <h5>Oh no! Unfortunately</h5>
+                        <h6 class="slash">You didn't pass the exam.</h6>
+                    </div>                    
+                    <div class="testocentro">
+                        <h5>Oh no!</h5>
+                        <h6 class="slash">You didn't passed the exam.</h6>
+                    </div>
+                    <div class="testocentro hideMsg">
+                        <h5>Congratulations!</h5>
+                        <h6>You passed the exam.</h6>
+                        <p>
+                            We'll send you the certificate
+                            in few minutes.<br>
+                            Check your email (including
+                            promotions / spam folder)
+                        </p>
+                    </div>
+                    <svg id="scorePie">
+                        <circle class="svg-indicator-track" />
+                        <circle class="svg-indicator-indication" />
+                    </svg>
+                </div>
+                <div id="wrong">
+                    <h4>Wrong</h4>
+                    <p></p>
+                    <p><span></span>/<span></span>  questions</p>
+                </div>
+            </div>
+            <div class="footer">
+                <button>RATE US</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="feedback">
+        <div class="content">
+            <h2>Tell us how it's going</h2>
+            <p>
+                From O to 10, how likely are you to recommend EPICODE
+                to a friend or a colleague?
+            </p>
+            <div class="rating">
+                <!--
+                <input type="radio" name="rating" id="rating-1">
+                <label for="rating-1"></label> 
+                -->
+            </div>
+            <p>Leave us an open feedback about your experience so far</p>
+            <div class="commento"> <!--fare il bordo sul div-->
+            <input type="text" placeholder="Write your comment here">
+            </div>
+            <div class="footer">
+                <button disabled>MORE INFO</button>
+            </div>
+        </div>
+    </template>    
+</body>
+</html>
